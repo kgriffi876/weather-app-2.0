@@ -3,47 +3,83 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="src/style.css" />
     <title>Sweet Sorbet Weather App</title>
   </head>
   <body>
-    <header>
-      <h1>Sweet Sorbet Weather App</h1>
+    <div class="weather-app">
+      <header>
+        <h1>Sweet Sorbet Weather App</h1>
 
-      <form action="">
-        <input type="text" placeholder="Enter a city" id="" />
-        <input type="button" value="Search" />
-      </form>
-    </header>
-    <br />
-    <main>
-      <div>⛅</div>
-      <div>
-        Toronto <br />
-        7&deg;C
-      </div>
+        <form action="">
+          <input type="text" placeholder="Enter a city" class="search-city" />
+          <input type="button" value="Search" class="search-button" />
+        </form>
+      </header>
       <br />
-      <div>Humidity <br />37%</div>
+      <hr />
+      <br />
+      <main>
+        <div class="current-weather">
+          <div class="weather-icon">⛅</div>
+          <div class="city-temperature">
+            <span class="city">Toronto</span> <br />
+            <span class="current-temperature">7&deg;C</span>
+          </div>
+        </div>
+        <br />
+        <div class="current-conditions">
+          <div>Humidity <br /><span class="humidity">37%</span></div>
 
-      <div>Wind Speed <br />19 km/h</div>
+          <div>Wind Speed <br /><span class="wind-speed">19 km/h</span></div>
+        </div>
+        <br />
+        <div class="day-container">
+          <div>
+            <span class="day-2">Tuesday</span> <br /><span class="day-2-temp"
+              >-4&deg;C</span
+            >
+          </div>
+          <div>
+            <span class="day-3">Wednesday</span> <br /><span class="day-3-temp"
+              >-4&deg;C</span
+            >
+          </div>
+          <div>
+            <span class="day-4">Thursday</span> <br /><span class="day-4-temp"
+              >-4&deg;C</span
+            >
+          </div>
+          <div>
+            <span class="day-5">Friday</span> <br /><span class="day-5-temp"
+              >-4&deg;C</span
+            >
+          </div>
+          <div>
+            <span class="day-6">Saturday</span> <br /><span class="day-6-temp"
+              >-4&deg;C</span
+            >
+          </div>
+          <div>
+            <span class="day-7">Sunday</span> <br /><span class="day-7-temp"
+              >-4&deg;C</span
+            >
+          </div>
+        </div>
+      </main>
       <br />
-      <div>Tuesday <br />-4&deg;C</div>
-      <div>Wednesday <br />-4&deg;C</div>
-      <div>Thursday <br />-4&deg;C</div>
-      <div>Friday <br />-4&deg;C</div>
-      <div>Saturday <br />-4&deg;C</div>
-      <div>Sunday <br />-4&deg;C</div>
-    </main>
-    <br />
-    <footer>
-      This project was coded by
-      <a href="https://github.com/kgriffi876?tab=repositories"
-        >Kristene Griffis</a
-      >
-      and is open-sourced on
-      <a href="https://github.com/kgriffi876/weather-app-2.0">GitHub</a> and
-      hosted on
-      <a href="https://sweet-sorbet-weatherapp.netlify.app/">Netlify</a>
-    </footer>
+      <hr />
+      <br />
+      <footer>
+        This project was coded by
+        <a href="https://github.com/kgriffi876?tab=repositories"
+          >Kristene Griffis</a
+        >
+        and is open-sourced on
+        <a href="https://github.com/kgriffi876/weather-app-2.0">GitHub</a> and
+        hosted on
+        <a href="https://sweet-sorbet-weatherapp.netlify.app/">Netlify</a>
+      </footer>
+    </div>
   </body>
 </html>
