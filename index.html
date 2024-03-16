@@ -12,14 +12,19 @@
       <header>
         <h1>Sweet Sorbet Weather App</h1>
 
-        <form action="" id="search-form">
+        <form id="search-form">
           <input
-            type="text"
+            type="search"
             placeholder="Enter a city"
             class="search-city"
             id="search-city"
           />
-          <input type="button" value="Search" class="search-button" />
+          <input
+            type="button"
+            value="Search"
+            class="search-button"
+            id="search-button"
+          />
         </form>
       </header>
       <br />
@@ -29,8 +34,8 @@
         <div class="current-weather">
           <div class="weather-icon">⛅</div>
           <div class="city-temperature">
-            <span class="city" id="current-city">Toronto</span> <br />
-            <span class="current-temperature">7&deg;C</span>
+            <span class="city" id="current-city"></span> <br />
+            <span class="current-temperature" id="temperature">&deg;C</span>
             <div class="current-date">
               <span class="current-day">Monday</span>
               <span class="current-time">10:00:00</span>
