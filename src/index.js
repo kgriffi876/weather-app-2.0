@@ -1,26 +1,26 @@
 function displayTemperature(response) {
   let temperatureElement = document.querySelector("#temperature");
   let temperature = response.data.temperature.current;
-  temperatureElement.innerHTML = Math.round(temperature);
+  let cityElement = document.querySelector("#city");
 
-  let cityElement = document.querySelector("#current-city");
   cityElement.innerHTML = response.data.city;
+  temperatureElement.innerHTML = Math.round(temperature);
 }
 
 function searchCity(city) {
   let apiKey = "tb40f7o735bc1dcb0b4c9507ada531a4";
-  let apiURL = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
-
-  axios.get(apiKey).then(displayTemperature);
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayTemperature);
 }
 
-function search(event) {
+function handleSearchSubmit(event) {
   event.preventDefault();
-  let searchInputElement = document.querySelector("#search-city");
-  searchCity(searchInputElement.value);
+  let searchInput = document.querySelector("#search-form-input");
+
+  searchCity(searchInput.value);
 }
 
-let searchForm = document.querySelector("#search-form");
-searchForm.addEventListener("submit", search);
+let searchFormElement = document.querySelector("#search-button");
+searchFormElement.addEventListener("click", handleSearchSubmit);
 
-searchCity("Toronto");
+searchCity("Vancouver");
