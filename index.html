@@ -30,10 +30,17 @@
       </header>
       <br />
       <hr />
-      <br />
+
       <main>
         <div class="city-weather">
-          <div id="city" class="city-temperature"></div>
+          <div>
+            <div id="city" class="city-temperature"></div>
+            <div class="current-conditions">
+              <div>Humidity <br /><span id="humidity"></span></div>
+
+              <div>Wind Speed <br /><span id="windSpeed"></span></div>
+            </div>
+          </div>
 
           <div class="city-information">
             <span id="icon"></span>
@@ -48,11 +55,21 @@
           </div>
         </div>
 
-        <br />
-        <div class="current-conditions">
-          <div>Humidity <br /><span id="humidity"></span></div>
-
-          <div>Wind Speed <br /><span id="windSpeed"></span></div>
+        <div class="weather-forecast">
+          <div class="row">
+            <div class="col-2">
+              <div class="weather-forecast-date">Thu</div>
+              <img
+                src="http://openweathermap.org/img/wn/50d@2x.png"
+                alt=""
+                width="42"
+              />
+              <div class="weather-forecast-temperatures">
+                <span class="weather-forecast-temperature-max">18&deg;|</span
+                ><span class="weather-forecast-temperature-min">12&deg;</span>
+              </div>
+            </div>
+          </div>
         </div>
       </main>
       <br />
