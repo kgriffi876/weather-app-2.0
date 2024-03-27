@@ -91,6 +91,11 @@ footer {
   font-size: 20px;
 }
 
+.weather-forecast-icon {
+  width: 90px;
+  height: 90px;
+}
+
 .weather-forecast-temperatures {
   display: grid;
   grid-template-columns: 1fr 1fr;
