@@ -82,7 +82,18 @@ footer {
 }
 
 .weather-forecast {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  margin: 0 auto;
+  padding: 20px 30px 20px 30px;
   text-align: center;
-  margin-top: 30px;
-  font-size: 25px;
+  font-size: 20px;
+}
+
+.weather-forecast-temperatures {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  width: 100px;
 }
